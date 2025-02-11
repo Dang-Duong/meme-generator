@@ -58,6 +58,37 @@ main{
     cursor: pointer;
 }
 
-.meme--image{
-    max-width: 100%;
+.meme--image {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+}
+
+.meme--text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: clamp(20px, 5vw, 42px);
+  text-transform: uppercase;
+  text-shadow: 
+    3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000;
+  text-align: center;
+  width: 90%;
+  margin: 0;
+  padding: 0 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.meme--text.top {
+  top: 5%;
+}
+
+.meme--text.bottom {
+  bottom: 5%;
 }
